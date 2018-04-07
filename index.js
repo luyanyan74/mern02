@@ -13,7 +13,7 @@ const app = express();
 app.use(
   cookieSession({
     // this function needs configuation object, 2 different properties
-    maxAge: 1 * 24 * 60 * 60 * 1000, // in miliseconds
+    maxAge: 5 * 60 * 1000, // in miliseconds
     keys: [keys.cookieKey] // encrypt the cookie key, additional level of security
   })
 );
